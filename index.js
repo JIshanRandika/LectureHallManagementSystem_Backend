@@ -20,6 +20,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/logout", logoutRoutes);
 
 require('./app/routes/lecHall.router')(app)
+require('./app/routes/timeSlot.router')(app)
 
 const port = process.env.PORT || 8080;
 app.listen(port, console.log(`Listening on port ${port}...`));
